@@ -1,37 +1,70 @@
-body{
-    background-color: beige;
-   
-   
+body {
+  background-color: beige;
 }
-.container{
+/* .container{
     
     width: 95%;
     height: 100vh;
     margin: auto;
     display: flex;
-    
-}
-
-.quotes{
-    border: 10px solid rgba(0, 195, 255, 0.74);
-    width: 900px;
-    height: 450px;
-    margin: auto;
-    display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: azure;
-    padding: 0 50px;
-
+    border: 2px solid;
+    
+} */
+.heading {
+  display: flex;
+  justify-content: center;
+  padding-block: 30px;
+  margin-bottom: 40px;
+}
+.quotes {
+  border: 10px solid rgba(0, 195, 255, 0.74);
+  width: 900px;
+  height: 450px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: azure;
+  padding: 0 50px;
 }
 
-.quotes p, .quotes h3{
-    font-size: 1.6rem;
-    color: grey;
+.quotes p,
+.quotes h3 {
+  font-size: 1.6rem;
+  color: grey;
 }
 
-.btn{
-    margin-top: 60px;
+.button {
+  margin-top: 30px;
+  text-align: center;
 }
 
+@media screen and (max-width: 420px) {
+  .quotes {
+    width: 340px;
+    height: 450px;
+    margin: auto;
+  }
+  .heading {
+
+    padding-block: 30px;
+    margin-bottom: 10px;
+  }
+}
+@media screen and (min-width: 421px) and (max-width:720px){
+    .quotes {
+        width: 540px;
+        height: 450px;
+        margin: auto;
+      }
+}
+@media screen and (min-width: 721px) and (max-width:900px){
+    .quotes {
+        width: 680px;
+        height: 450px;
+        margin: auto;
+      }
+}
